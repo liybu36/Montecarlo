@@ -1,0 +1,26 @@
+// Mean energy to produce one quantum [eV] 
+MeanQuantaEnergy       = 19.5
+// S1 Scale factor (to match the correct LY) // 3.5
+S1ScaleFactor	       = 1.2129
+// S2 Yield (to match 24 pe/e-)    // 254 after QE_scaling 
+S2Yield                = 70             
+// Excitation Ratio for leptons              // 0.21 
+ExcitationRatioER      = 0.21
+// Excitation Ratio for nucleons             // unknown --> 1 
+ExcitationRatioNR      = 1.
+// Photon mean energy [eV]                   // 9.81*eV; lambda = 126.8 nm -> 9,69 
+PhotonEneMean	       = 9.69   
+// Photon energy width [eV]                  // 0.60*eV;    FWHM = 7.8 nm  -> 0.22
+PhotonEneWidth         = 0.22    
+// Transverse Diffusion from ICARUS NIM A527(2004)329 [cm2/s]  (4.8) 
+D_T		       = 4.8
+// Longitudinal Diffusion from Atrazhev-Timoshkim theory at 1kV/cm [cm2/s]  (18)
+D_L		       = 18
+// Fast exp decay constant [ns]       default: 6
+TauFast 	       = 6
+// Slow exp decay constant [ns]       default: 1600		    
+TauSlow 	       = 1600
+// Recombination time constant [ns]   default: 0.8 
+TauReco 	       = 0.8
+// e- mean lifetime     [ms] -> 15.8 
+TaueLAr = 15.8

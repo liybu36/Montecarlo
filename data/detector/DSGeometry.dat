@@ -1,0 +1,71 @@
+#-----------------------------#
+# Dark Side Geometry  [mm]    #
+#-----------------------------#
+
+
+WorldSizeX = 20000.
+WorldSizeY = 20000.
+WorldSizeZ = 20000.
+
+DSTankHeight = 12000.
+DSTankRMax = 7000.
+
+# Stainless Steel Sphere
+SSSRadius = 2000.
+
+# Cryostats
+CryostatShiftZ = 368.5
+
+TrunkShiftZ = 170.
+TrunkDiameter = 38.1
+TrunkThickness = 2.
+TrunkTopBottomOffsetZ = 150.
+TrunkTopBottomOffsetX = -38.1
+TrunkBottomHeight = 600.
+TrunkMiddleHeight = 203.2
+TrunkDistToCryostatAxis = 228.6
+
+
+# TPC
+TPCShiftZ = -28.6
+
+TeflonSupportDiameter = 469.9
+TeflonSupportThickness = 19.05
+TeflonSupportHeight = 386.08
+
+PMTAssemblyHeight = 142.24
+TeflonCapDiameter = 469.9
+TeflonCapHeight = 70.61
+
+LArBottomLayerThickness = 0.8
+CathodeWindowDiameter = 424.18
+CathodeWindowHeight = 6.35
+ITOThickness = 0.000015
+
+ReflectorInnerDiameter = 355.6
+ReflectorOuterDiameter = 406.4
+ReflectorHeight = 355.7
+AboveGridInnerDiameter = 358.9
+AboveGridOuterDiameter = 400.05
+AboveGridHeight = 15.03
+GasPocketThickness = 9.37
+TPBThickness = 0.1
+
+DivingBellHeight = 18.42
+DivingBellTopHeight = 3.18
+DivingBellOuterDiameter = 424.18
+DivingBellInnerDiameter = 416.56
+
+FieldRingsHeight = 342.9
+FieldRingsThickness = 4.167
+
+
+# TPC PMTs
+PMTBodyDiameter = 50.29              
+PMTBodyHeight = 122.43                  
+PMTHeadDiameter = 76.2                  
+PMTHeadHeight = 35.04                  
+PMTWallThickness = 0.55                       
+PMTWindowThickness = 3.5866
+PMTSpacing = 82.55
+PMTOffset  = 1

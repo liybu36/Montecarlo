@@ -1,0 +1,82 @@
+  
+# -----------------------------#
+# Dark Side Optics            #
+#-----------------------------#
+#  
+# UV flag: wavelength < 150 nm
+# Vis flag: wavelength > 150 nm
+#
+#-----------------------------#
+# Refraction Indexes
+
+#factor w/r to LArRindex (!= 1. only if WithNewGridModel is 0)
+GridSteelRindScale    = 1.
+
+#absolute
+PhotocathodeUVRind    = 1.47
+PhotocathodeVisRind   = 1.47
+FusedSilicaUVRind     = 1.47
+FusedSilicaVisRind    = 1.47
+TPBUVRind             = 1.5
+TPBVisRind            = 1.5
+GArRindexScale        = 1.074
+PArRind               = 1.27
+
+#-----------------------------#
+# Absorption Lengths   [m]
+
+GaseousArgonUVAbs    = 100.
+GaseousArgonVisAbs   = 100.
+LiquidArgonUVAbs     = 1.6
+LiquidArgonVisAbs    = 100.
+# myGrid_h/2 = 0.00005 m
+GridSteelUVAbs       = 1000.  # PDM: Made longer -- abs len not used.
+GridSteelVisAbs      = 1000.  # PDM: Made longer -- abs len not used.
+FusedSilicaUVAbs     = 0.0000001
+FusedSilicaVisAbs    = 100.
+TPBUVAbs             = 1000.
+TPBVisAbs            = 1000.
+
+#-----------------------------#
+# Other WLS Properties
+
+WLSAbsorptionFactor   = 0.04
+#the above parameter is different from std TPB absrption length
+WLSMeanNumberPhotons  = 1.
+WLSTimeConstant_ns    = 1.5
+WLSEfficiency         = 1.
+
+#-----------------------------#
+# Rayligh scattering scaling factors
+
+LArRayleighScale      = 0.8
+
+#-----------------------------#
+# Rayligh scattering length [m]
+
+FSilicaRaylVisLength  = 100.
+FSilicaRaylUVLength   = 1.
+
+#-----------------------------#
+# Placements (booleans)
+
+WithITO               = 1
+WithGasPocket         = 1
+WithNewGridModel      = 1
+GridNormalTransparency = 0.9506 # Actual grid transparency at normal incidence
+
+#-----------------------------#
+# Surfaces (parameters)
+# Ref = Geant4 reflectivity is actually (1 - absorption)
+# transittance and reflection are then driven by RINDEXs
+
+LArGridUVRef        = .1  # PDM: Grid steel, extrapolated from meas @>250 nm
+LArGridVisRef       = 0.5  # PDM: Grid steel, measured @ Princeton by G. Koh.  PDM X-26
+TeflonTPBUVRef      = .075
+TeflonTPBVisRef     = 0.98
+PMTLArUVRef         = .2
+PMTLArVisRef        = .2
+TeflonLArUVRef      = .075
+TeflonLArVisRef     = .98
+ArTPBVisTran        = 0.6
+
