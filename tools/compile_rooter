@@ -1,0 +1,8 @@
+cd $G4DS/tools
+g++ g4rootered.C -o g4rooter `root-config --cflags --glibs`
+echo 'g4rooter compiled....'
+g++ g4merger.C -o g4merger `root-config --cflags --glibs`
+echo 'g4merger compiled....'
+g++ g4rootered_full.C -o g4rooter_full `root-config --cflags --glibs`
+echo 'g4rooter full compiled....'
+cd $PWD
